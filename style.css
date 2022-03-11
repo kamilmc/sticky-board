@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    touch-action: none;
+}
+body{
+    background-color: #f7f7f7;
+    touch-action: none;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    touch-action: none;
+    background-color: #D4B57F;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    box-sizing: border-box;
+
+}
+
+.square textarea{
+    width: 98%;
+    height: 98%;
+    background-color: #feff9c;
+    resize: none;
+    border: 3px solid #feff9c;
+    box-sizing: border-box;
+    padding: 20px;
+    -webkit-box-shadow: 5px 7px 19px -12px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 5px 7px 19px -12px rgba(66, 68, 90, 1);
+    box-shadow: 5px 7px 19px -12px rgba(66, 68, 90, 1);
+    cursor: pointer;
+    caret-color: red;
+    transition: 0.5s;
+    outline: none;
+}
+.square textarea:focus{
+    cursor: text;
+    border: 3px solid #ccc;
+}
+.btn {
+    position: absolute;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BCE27F;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#addbtn {
+    right: 30px;
+}
+
+#removebtn {
+    left: 30px;
+}
